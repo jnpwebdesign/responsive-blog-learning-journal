@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+}
+html, 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    min-width: 350px;
+    background-color: rgb(152, 224, 255);
+}
+
+date {
+    text-transform: uppercase;
+}
+
+
+/************INTRO*******************/
+
+
+nav {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+ul {
+
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+
+li {
+    list-style: none;
+    font-weight: 900;
+    padding: .4rem 1rem .4rem 2rem; 
+    
+}
+
+.logo {
+    margin-right: auto;
+    max-height: 5rem;
+
+}
+
+.hero-container {
+    background-image: url(images/hilton-head-island-matching-outfits-011-custom-kids-clothes.jpg);
+    background-size: cover;
+   
+}
+.hero-img {
+    width: 100%;
+    padding-top: 1px;
+    margin-top: 0;
+}
+
+
+h1, h2, .hero-date {
+    color: black;
+    text-shadow: 0 1px black;
+    margin: 0;
+}
+
+.hero-date {
+    padding: 0 1rem;
+}
+
+h1{
+    font-size: 2.5rem;
+    padding: 0 1rem 0.5rem 1rem;
+    line-height: 2.5rem;
+
+}
+
+h2 {
+    font-size: 0.9rem;
+    font-weight: 400;
+    padding: 0 1rem 1rem 1rem;
+
+}
+
+/************** MAIN SECTION **************/
+
+
+.blog-posts-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    row-gap: 1rem;
+    column-gap: 1rem;
+    padding: 2rem 2rem 0 2rem;
+}
+
+.blog-post {
+    max-width: 400px;
+    min-width: 300px;
+    background-color: white;
+    border-radius: 5px;
+}
+.blog-post-image {
+    width: 100%;
+    margin: 0 auto 1rem auto;
+    display: block;
+    border: 1px solid rgb(209, 209, 209); 
+    border-radius: 5px;
+}
+
+.blog-post-date, .blog-title, .blog-content {
+    padding: .2rem .7rem .7rem .7rem;
+    margin: 0;
+}
+
+
+.view-more {
+    text-align: center;
+    margin: .5rem auto;
+    font-weight: bold;
+    text-decoration: underline;
+    color: black;
+}
+
+/* *************FOOTER*********** */
+
+.copyright-container {
+    text-align: center;
+    margin: 0;
+    padding: 1rem;
+    background-color: white;
+}
+
+.my-learning-journal {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: .9rem;
+}
+
+
+.copyright {
+    margin: 0;
+    padding: .2rem;
+    font-size: .7rem;
+}
+
+
+
+
+
+
+/* Media Queries */
+
+@media (min-width: 1024px) {
+
+}
+
+
