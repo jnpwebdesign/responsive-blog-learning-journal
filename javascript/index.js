@@ -1,0 +1,1 @@
+import { blogPostObject } from "./data";
