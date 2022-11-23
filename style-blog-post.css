@@ -152,6 +152,9 @@ h2:last-of-type {
     color: #5B6F6F;
 }
 
+.blog-posts-container {
+    margin-bottom: 1.5rem;
+}
 /* *************FOOTER*********** */
 
 .copyright-container {
@@ -278,6 +281,7 @@ h2:last-of-type {
         font-size: 1.5rem;
     }
     
+
 }
 
 

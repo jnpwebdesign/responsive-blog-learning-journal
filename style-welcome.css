@@ -218,6 +218,11 @@ h2 {
         padding: 0;
     }
 
+    .view-more {
+        font-size: 1.2rem;
+    }
+
+
 }
 
 @media (min-width: 1024px) {
@@ -270,6 +275,10 @@ h2 {
     .current-post-container {
         margin: 0;
         padding: 0;
+    }
+
+    .view-more {
+        font-size: 1.5rem;
     }
 
 }
