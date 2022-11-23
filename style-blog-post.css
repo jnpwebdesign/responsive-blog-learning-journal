@@ -24,11 +24,12 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #F8F6F4;
+    background-color: white;
     font-family: 'Caveat', cursive;
     font-weight: bold;
     font-size: 1.5rem;
 }
+
 ul {
     margin: 0;
     padding: 0;
@@ -54,51 +55,58 @@ li a {
     margin-right: auto;
     max-height: 6rem;
     margin-left: 1rem;
-
 }
 
-.hero-container {
-    background-image: url(images/hilton-head-island-matching-outfits-011-custom-kids-clothes.jpg);
-    background-size: 100%;
-    min-height: 200px;
-    min-width: 300px;
-    background-position: 20% 25%;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;   
-    border-bottom: 1px solid #9EBABB;
+.current-post-img {
+    max-width: 600px;
+    width: 100%;
 }
 
+/************** MAIN SECTION **************/
 
-h1, h2, .hero-date {
-    color:#384444;;
+.current-post-container {
+    background-color: white;
+    padding-bottom: 2rem;
+}
+
+.current-post-date {
+    padding: .7rem 1rem 2rem 1rem;
+    font-size: 1.4rem;
+    margin: .7rem;
+}
+
+.current-post-img {
+    object-fit: cover;
+}
+
+h1, .current-post-paragraph {
+    color:#384444;
     text-shadow: 0 1px 3px #f8f6f4;
-    margin: 0;
-}
-
-.hero-date {
-    padding: 0 1rem;
-    font-size: 1rem;
+    margin: .7rem;
 }
 
 h1{
     font-size: 2rem;
-    padding: 0 1rem 0.5rem 1rem;
+    padding: .5rem 1rem 0.5rem 1rem;
     line-height: 1.5rem;
     font-family: 'Caveat', cursive
 }
 
 h2 {
-    font-size: 0.9rem;
-    font-weight: 400;
-    padding: 0 1rem 1rem 1rem;
-    margin-top: .7rem;
-
+    margin: 2rem 1rem 1rem 2rem;
+    text-align: center;
 }
 
-/************** MAIN SECTION **************/
-
-
+h2:last-of-type {
+    margin: 1rem;
+}
+.current-post-paragraph {
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0 1.5rem 1rem 1.5rem;
+    font-size: 1.4rem;
+    text-align: justify;
+}
 
 .blog-posts-container {
     display: grid;
@@ -128,13 +136,12 @@ h2 {
 .blog-post-date, .blog-title, .blog-content {
     padding: .3rem .7rem .7rem .7rem;
     margin: 0;
-
 }
 
 .blog-title {
     font-family: 'Caveat', cursive;
     font-size: 1.5rem;
-    padding-top:      /* text-shadow: 1px 0 1px #5B6F6F;  */
+     /* text-shadow: 1px 0 1px #5B6F6F;  */
 }
 
 .view-more {
@@ -176,21 +183,11 @@ h2 {
 }
 
 
-
-
-
-
 /* Media Queries */
 
 @media (min-width: 590px) and (max-width: 1023px) {
 
-    .hero-container {
-        min-height: 250px;
-        min-width: 400px;
-        background-position: 20% 25%;
-    }
-
-    .hero-date {
+    .current-post-date {
         padding: 1rem 1rem;
         font-size: 1.2rem;
     }
@@ -206,7 +203,10 @@ h2 {
         padding: 1rem;
     }
 
-
+    .current-post-img {
+        margin: 0 auto;
+        display: block;
+    }
 }
 
 
@@ -224,7 +224,7 @@ h2 {
         background-position: 20% 22%;
     }
 
-    .hero-date {
+    .current-post-date {
         padding: 1rem 1rem;
         font-size: 1.5rem;
     }
@@ -240,7 +240,34 @@ h2 {
         padding: 1rem;
     }
 
+    .current-post-image-and-text {
 
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 650px;
+    }
+
+    .current-post-text {
+        height: 650px;
+        background-color: #dcbfd4;
+        margin: 0;
+        padding: 0;
+    }
+    .current-post-subtitle {
+        text-shadow: 1px 0 3px #F8F6F4;
+    }
+
+    .current-post-container {
+        margin: 0;
+        padding: 0;
+    }
+    .current-post-img {
+        max-width: 700px;
+        width: 100%;
+        height: 650px;
+        margin: 0;
+        padding: 0;
+    }
 
     
 }
