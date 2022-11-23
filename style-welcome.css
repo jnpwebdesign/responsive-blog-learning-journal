@@ -24,11 +24,12 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #F8F6F4;
+    background-color: white;
     font-family: 'Caveat', cursive;
     font-weight: bold;
     font-size: 1.5rem;
 }
+
 ul {
     margin: 0;
     padding: 0;
@@ -54,50 +55,64 @@ li a {
     margin-right: auto;
     max-height: 6rem;
     margin-left: 1rem;
-
+    max-width: 100px;
 }
 
-.hero-container {
-    background-image: url(images/hilton-head-island-matching-outfits-011-custom-kids-clothes.jpg);
-    background-size: 100%;
-    min-height: 200px;
-    min-width: 300px;
-    background-position: 20% 25%;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;   
-    border-bottom: 1px solid #9EBABB;
-}
-
-
-h1, h2, .hero-date {
-    color:#384444;;
-    text-shadow: 0 1px 3px #f8f6f4;
-    margin: 0;
-}
-
-.hero-date {
-    padding: 0 1rem;
-    font-size: 1rem;
-}
-
-h1{
-    font-size: 2rem;
-    padding: 0 1rem 0.5rem 1rem;
-    line-height: 1.5rem;
-    font-family: 'Caveat', cursive
-}
-
-h2 {
-    font-size: 0.9rem;
-    font-weight: 400;
-    padding: 0 1rem 1rem 1rem;
-    margin-top: .7rem;
-
-}
 
 /************** MAIN SECTION **************/
 
+.current-post-container {
+    background-color: white;
+    padding-bottom: 2rem;
+}
+
+.profile-img {
+    border-radius: 50%;
+    max-width: 200px;
+    grid-area: image;
+    margin: 2rem auto .5rem auto;
+}
+
+.intro-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto-fit auto-fit auto-fit;
+    grid-template-areas:    "image"
+                            "title"
+                            "subtitle";
+    background-color: #dcbfd4;
+}
+
+h1{
+    font-size: 2.5rem;
+    padding: 0 1rem 0.5rem 1rem;
+    line-height: 2.5rem;
+    font-family: 'Caveat', cursive;
+    grid-area: title;
+    text-align: center;
+    color:#384444;
+    text-shadow: 0 1px 3px #f8f6f4;
+    margin: .7rem;
+}
+
+.welcome {
+    display: block;
+}
+
+h2 {
+    margin: 2rem 1.5rem 1rem 1.5rem;
+    text-align: center;
+    grid-area: subtitle;
+}
+
+.current-post-paragraph {
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0 1.5rem 1rem 1.5rem;
+    font-size: 1.4rem;
+    text-align: justify;
+    margin-top: .3rem;
+}
 
 .blog-posts-container {
     display: grid;
@@ -127,13 +142,12 @@ h2 {
 .blog-post-date, .blog-title, .blog-content {
     padding: .3rem .7rem .7rem .7rem;
     margin: 0;
-
 }
 
 .blog-title {
     font-family: 'Caveat', cursive;
     font-size: 1.5rem;
-    padding-top:      /* text-shadow: 1px 0 1px #5B6F6F;  */
+     /* text-shadow: 1px 0 1px #5B6F6F;  */
 }
 
 .view-more {
@@ -175,24 +189,9 @@ h2 {
 }
 
 
-
-
-
-
 /* Media Queries */
 
 @media (min-width: 590px) and (max-width: 1023px) {
-
-    .hero-container {
-        min-height: 250px;
-        min-width: 400px;
-        background-position: 20% 25%;
-    }
-
-    .hero-date {
-        padding: 1rem 1rem;
-        font-size: 1.2rem;
-    }
     
     h1{
         font-size: 3rem;
@@ -205,11 +204,21 @@ h2 {
         padding: 1rem;
     }
 
-    .hero-text-container {
-        max-width: 490px;
+    .profile-img {
+        max-width: 255px;
     }
-}
 
+    .current-post-subtitle {
+        text-shadow: 1px 0 3px #F8F6F4;
+        font-size: 2rem;
+    }
+
+    .current-post-text {
+        margin: 0 2rem;
+        padding: 0;
+    }
+
+}
 
 @media (min-width: 1024px) {
 
@@ -219,33 +228,51 @@ h2 {
         padding: .4rem 2rem .4rem 2rem; 
     }
 
-    .hero-container {
-        min-height: 350px;
-        min-width: 500px;
-        background-position: 20% 22%;
+    .intro-container {
+        grid-template-columns: minmax(20%, 40%) minmax(60%, 80%);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "image title"
+                         "image subtitle";
     }
 
-    .hero-date {
-        padding: 1rem 1rem;
-        font-size: 1.5rem;
+    .profile-img {
+        max-width: 275px;
     }
-    
+
     h1{
         font-size: 3.5rem;
-        padding: 1rem 1rem 0 1rem;
+        padding: 2rem 1rem 0 1rem;
         line-height: 3.5rem;
     }
     
     h2 {
         font-size: 1.5rem;
-        padding: 1rem;
+        padding: 0;
+        margin-bottom: .5rem;
     }
 
-    .hero-text-container {
-        max-width: 600px;
+    .current-post-paragraph {
+        margin-bottom: 0;
+        padding-top: 1rem;
+        font-size: 1.8rem;
     }
 
-    
+    .current-post-text {
+        margin: 0 4rem;
+        padding: 0;
+    }
+
+    .current-post-subtitle {
+        text-shadow: 1px 0 3px #F8F6F4;
+        font-size: 2rem;
+    }
+
+    .current-post-container {
+        margin: 0;
+        padding: 0;
+    }
+
 }
+
 
 

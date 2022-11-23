@@ -207,8 +207,11 @@ h2:last-of-type {
         margin: 0 auto;
         display: block;
     }
-}
 
+    .view-more {
+        font-size: 1.2rem;
+    }
+}
 
 @media (min-width: 1024px) {
 
@@ -245,6 +248,8 @@ h2:last-of-type {
         display: grid;
         grid-template-columns: 1fr 1fr;
         height: 650px;
+        border: 1px solid #dcbfd4;
+        z-index: -1;
     }
 
     .current-post-text {
@@ -269,6 +274,9 @@ h2:last-of-type {
         padding: 0;
     }
 
+    .view-more {
+        font-size: 1.5rem;
+    }
     
 }
 
