@@ -1,10 +1,9 @@
 export const blogPostObject = [
     {
         image: "images/hattie-dress-black-science-fabric-001-julie-napear-photography.jpg",
-        date: ,
-        title: "Science Twirl Dress",
-        heading1: undefined,
-        content1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Interdum varius sit amet mattis vulputate.", 
+        date: "January 1, 2021",
+        title: "Science-themed Twirl Dress",
+        snippet: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Interdum varius sit amet mattis vulputate.", 
         heading2: "Amet volutpat consequat",
         content2: "Amet volutpat consequat mauris nunc congue nisi vitae suscipit. Blandit cursus risus at ultrices mi tempus. Id donec ultrices tincidunt arcu. Vel fringilla est ullamcorper eget nulla. Integer quis auctor elit sed vulputate mi sit. Suspendisse sed nisi lacus sed viverra tellus in hac. Vestibulum lorem sed risus ultricies tristique.",
         heading3: "Lorem ipsum dolor",
@@ -14,10 +13,9 @@ export const blogPostObject = [
     },
     {
         image: "images/dinosaur-bowtie-and-vest-for-boys-010-julie-napear-photography.jpg",
-        date: ,
+        date: "April 8, 2021",
         title: "Dinosaur Vest & Bowtie",
-        heading1: undefined,
-        content1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Interdum varius sit amet mattis vulputate.", 
+        snippet: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Interdum varius sit amet mattis vulputate.", 
         heading2: "Amet volutpat consequat",
         content2: "Amet volutpat consequat mauris nunc congue nisi vitae suscipit. Blandit cursus risus at ultrices mi tempus. Id donec ultrices tincidunt arcu. Vel fringilla est ullamcorper eget nulla. Integer quis auctor elit sed vulputate mi sit. Suspendisse sed nisi lacus sed viverra tellus in hac. Vestibulum lorem sed risus ultricies tristique.",
         heading3: "Lorem ipsum dolor",
@@ -27,10 +25,9 @@ export const blogPostObject = [
     },
     {
         image: "images/birdie-rainbow-hearts-back.jpg",
-        date: ,
+        date: "September 2021",
         title: "Pride Rainbow Dress",
-        heading1: undefined,
-        content1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Interdum varius sit amet mattis vulputate.", 
+        snippet: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Interdum varius sit amet mattis vulputate.", 
         heading2: "Amet volutpat consequat",
         content2: "Amet volutpat consequat mauris nunc congue nisi vitae suscipit. Blandit cursus risus at ultrices mi tempus. Id donec ultrices tincidunt arcu. Vel fringilla est ullamcorper eget nulla. Integer quis auctor elit sed vulputate mi sit. Suspendisse sed nisi lacus sed viverra tellus in hac. Vestibulum lorem sed risus ultricies tristique.",
         heading3: "Lorem ipsum dolor",
@@ -40,10 +37,9 @@ export const blogPostObject = [
     },
     {
         image: "images/avocado-pink-halter-dress-back-twirl.jpg",
-        date: ,
+        date: "December 28, 2021",
         title: "Avocado Twirly Dress",
-        heading1: undefined,
-        content1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Interdum varius sit amet mattis vulputate.", 
+        snippet: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Interdum varius sit amet mattis vulputate.", 
         heading2: "Amet volutpat consequat",
         content2: "Amet volutpat consequat mauris nunc congue nisi vitae suscipit. Blandit cursus risus at ultrices mi tempus. Id donec ultrices tincidunt arcu. Vel fringilla est ullamcorper eget nulla. Integer quis auctor elit sed vulputate mi sit. Suspendisse sed nisi lacus sed viverra tellus in hac. Vestibulum lorem sed risus ultricies tristique.",
         heading3: "Lorem ipsum dolor",
@@ -53,10 +49,9 @@ export const blogPostObject = [
     },
     {
         image: "images/pink-dinosaur-summer-dress-003-julie-napear-photography.jpg",
-        date: ,
+        date: "May 2, 2022",
         title: "Science Twirl Dress",
-        heading1: undefined,
-        content1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Interdum varius sit amet mattis vulputate.", 
+        snippet: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Interdum varius sit amet mattis vulputate.", 
         heading2: "Amet volutpat consequat",
         content2: "Amet volutpat consequat mauris nunc congue nisi vitae suscipit. Blandit cursus risus at ultrices mi tempus. Id donec ultrices tincidunt arcu. Vel fringilla est ullamcorper eget nulla. Integer quis auctor elit sed vulputate mi sit. Suspendisse sed nisi lacus sed viverra tellus in hac. Vestibulum lorem sed risus ultricies tristique.",
         heading3: "Lorem ipsum dolor",
@@ -66,10 +61,9 @@ export const blogPostObject = [
     },
     {
         image: "images/belle-dress-beauty-and-the-beast-002.jpg",
-        date: ,
+        date: "August 18, 2022",
         title: "Science Twirl Dress",
-        heading1: undefined,
-        content1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Interdum varius sit amet mattis vulputate.", 
+        snippet: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Interdum varius sit amet mattis vulputate.", 
         heading2: "Amet volutpat consequat",
         content2: "Amet volutpat consequat mauris nunc congue nisi vitae suscipit. Blandit cursus risus at ultrices mi tempus. Id donec ultrices tincidunt arcu. Vel fringilla est ullamcorper eget nulla. Integer quis auctor elit sed vulputate mi sit. Suspendisse sed nisi lacus sed viverra tellus in hac. Vestibulum lorem sed risus ultricies tristique.",
         heading3: "Lorem ipsum dolor",
@@ -78,3 +72,4 @@ export const blogPostObject = [
         content4: "Nisl rhoncus mattis rhoncus urna. Nullam vehicula ipsum a arcu. Erat velit scelerisque in dictum non consectetur a erat nam. Laoreet suspendisse interdum consectetur libero id faucibus nisl. Nisl vel pretium lectus quam id. Quis eleifend quam adipiscing vitae."
     },
 ]
+

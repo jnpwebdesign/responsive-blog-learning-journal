@@ -74,10 +74,10 @@ const blogPostObject = [
     },
 ]
 
+console.log("hello")
 const blogPostsContainer = document.getElementById("blog-posts-container");
 let blogFeed = "";
 console.log(blogPostsContainer);
-console.log(blogFeed);
 
 function renderBlogPosts() {
     blogPostsContainer.innerHTML = blogFeed;
@@ -85,13 +85,13 @@ function renderBlogPosts() {
 
 function printBlogFeed() {
 
-    for (let i = 0; i < 3; i++) {
+    for (post of blogPostObject) {
     blogFeed += `
         <div class="blog-post">
-            <img class="blog-post-image" src="${blogPostObject[i].image}">
-            <date class="blog-post-date">${blogPostObject[i].date}</date>
-            <h3 class="blog-title">${blogPostObject[i].title}</h3>
-            <p class="blog-content">${blogPostObject[i].snippet}
+            <img class="blog-post-image" src="${post.image}">
+            <date class="blog-post-date">${post.date}</date>
+            <h3 class="blog-title">${post.title}</h3>
+            <p class="blog-content">${post.snippet}
             </p>
         </div>
         `;

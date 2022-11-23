@@ -74,10 +74,10 @@ const blogPostObject = [
     },
 ]
 
+console.log("hello")
 const blogPostsContainer = document.getElementById("blog-posts-container");
 let blogFeed = "";
 console.log(blogPostsContainer);
-console.log(blogFeed);
 
 function renderBlogPosts() {
     blogPostsContainer.innerHTML = blogFeed;
@@ -85,7 +85,7 @@ function renderBlogPosts() {
 
 function printBlogFeed() {
 
-    for (let i = 0; i < 3; i++) {
+    for (let i = 3; i < 6; i++) {
     blogFeed += `
         <div class="blog-post">
             <img class="blog-post-image" src="${blogPostObject[i].image}">
