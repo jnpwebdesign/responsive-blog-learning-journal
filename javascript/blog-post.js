@@ -122,8 +122,6 @@ function printCurrentPost (post) {
     renderCurrentPost();
 }
 
-
-
 function renderBlogPosts() {
     blogPostsContainer.innerHTML = blogFeed;
 }

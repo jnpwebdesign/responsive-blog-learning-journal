@@ -76,8 +76,6 @@ const blogPostObject = [
 
 const blogPostsContainer = document.getElementById("blog-posts-container");
 let blogFeed = "";
-console.log(blogPostsContainer);
-console.log(blogFeed);
 
 function renderBlogPosts() {
     blogPostsContainer.innerHTML = blogFeed;
@@ -87,16 +85,35 @@ function printBlogFeed() {
     for (let i = 0; i < 3; i++) {
     blogFeed += `
         <div class="blog-post">
-            <img class="blog-post-image" src="${blogPostObject[i].image}">
-            <date class="blog-post-date">${blogPostObject[i].date}</date>
-            <h3 class="blog-title">${blogPostObject[i].title}</h3>
-            <p class="blog-content">${blogPostObject[i].snippet}
+            <img class="blog-post-image" src="${blogPostObject[i].image}" data-choose="${blogPostObject[i].title}">
+            <date class="blog-post-date" data-choose="${blogPostObject[i].title}">
+                ${blogPostObject[i].date}
+            </date>
+            <h3 class="blog-title" data-choose="${blogPostObject[i].title}">
+                ${blogPostObject[i].title}
+            </h3>
+            <p class="blog-content" data-choose="${blogPostObject[i].title}">
+                ${blogPostObject[i].snippet}
             </p>
         </div>
         `;
     }
-    console.log(blogFeed);
     renderBlogPosts();
 }
 
 printBlogFeed();
+
+document.addEventListener("click", function(e) {
+    if(e.target.dataset.choose) {
+        for (let i = 0; i < blogPostObject.length; i++) {
+            if (e.target.dataset.choose === blogPostObject[i].title) {
+                window.open("./blog-post.html","_self");
+            }
+        }
+    }
+});
+
+
+$.get('a.html', null, function(text){
+    alert($(text).find('#name'));
+});

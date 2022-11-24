@@ -221,18 +221,12 @@ h2:last-of-type {
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1499px) {
 
     li {
         list-style: none;
         font-weight: 900;
         padding: .4rem 2rem .4rem 2rem; 
-    }
-
-    .hero-container {
-        min-height: 350px;
-        min-width: 500px;
-        background-position: 20% 22%;
     }
 
     .current-post-date {
@@ -266,6 +260,7 @@ h2:last-of-type {
         margin: 0;
         padding: 0;
     }
+
     .current-post-subtitle {
         text-shadow: 1px 0 3px #F8F6F4;
         margin-top: 0;
@@ -274,6 +269,10 @@ h2:last-of-type {
 
     .current-post-subtitle:first-of-type {
         padding-top: 2rem;
+    }
+
+    .current-post-paragraph {
+        font-size: 1.5vw;
     }
 
     .current-post-container {
@@ -291,8 +290,18 @@ h2:last-of-type {
     .view-more {
         font-size: 1.5rem;
     }
-    
-
 }
 
+@media (min-width: 1500px) {
+    .current-post-paragraph {
+        font-size: 1.2vw;
+    }
 
+    .current-post-image-and-text{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .current-post-img {
+        margin: 0 auto;
+    }
+}
