@@ -50,7 +50,7 @@ export const blogPostObject = [
     {
         image: "images/pink-dinosaur-summer-dress-003-julie-napear-photography.jpg",
         date: "May 2, 2022",
-        title: "Science Twirl Dress",
+        title: "Dinosaur Dress",
         snippet: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Interdum varius sit amet mattis vulputate.", 
         heading2: "Amet volutpat consequat",
         content2: "Amet volutpat consequat mauris nunc congue nisi vitae suscipit. Blandit cursus risus at ultrices mi tempus. Id donec ultrices tincidunt arcu. Vel fringilla est ullamcorper eget nulla. Integer quis auctor elit sed vulputate mi sit. Suspendisse sed nisi lacus sed viverra tellus in hac. Vestibulum lorem sed risus ultricies tristique.",
@@ -62,7 +62,7 @@ export const blogPostObject = [
     {
         image: "images/belle-dress-beauty-and-the-beast-002.jpg",
         date: "August 18, 2022",
-        title: "Science Twirl Dress",
+        title: "Beauty and her Books Dress",
         snippet: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Interdum varius sit amet mattis vulputate.", 
         heading2: "Amet volutpat consequat",
         content2: "Amet volutpat consequat mauris nunc congue nisi vitae suscipit. Blandit cursus risus at ultrices mi tempus. Id donec ultrices tincidunt arcu. Vel fringilla est ullamcorper eget nulla. Integer quis auctor elit sed vulputate mi sit. Suspendisse sed nisi lacus sed viverra tellus in hac. Vestibulum lorem sed risus ultricies tristique.",
