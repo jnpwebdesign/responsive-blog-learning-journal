@@ -50,11 +50,14 @@ li a {
     color: #5B6F6F;
 }
 
+li a:hover {
+    text-shadow: 2px 2px 5px #dcbfd4;
+    font-size: 1.6rem;
+}
 .logo {
     margin-right: auto;
     max-height: 6rem;
     margin-left: 1rem;
-
 }
 
 .hero-container {
@@ -68,7 +71,6 @@ li a {
     justify-content: end;   
     border-bottom: 1px solid #9EBABB;
 }
-
 
 h1, h2, .hero-date {
     color:#384444;;
@@ -144,6 +146,8 @@ h2 {
     text-decoration: underline;
     color: #5B6F6F;
 }
+
+
 
 /* *************FOOTER*********** */
 
@@ -246,7 +250,6 @@ h2 {
     .view-more {
         font-size: 1.5rem;
     }
-
     
 }
 

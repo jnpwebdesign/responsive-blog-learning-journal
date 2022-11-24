@@ -51,6 +51,11 @@ li a {
     color: #5B6F6F;
 }
 
+li a:hover {
+    text-shadow: 2px 2px 5px #dcbfd4;
+    font-size: 1.6rem;
+}
+
 .logo {
     margin-right: auto;
     max-height: 6rem;

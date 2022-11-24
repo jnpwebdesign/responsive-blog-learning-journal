@@ -26,7 +26,7 @@ const blogPostObject = [
     },
     {
         image: "images/birdie-rainbow-hearts-back.jpg",
-        date: "September 2021",
+        date: "September 12, 2021",
         title: "Pride Rainbow Dress",
         snippet: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Interdum varius sit amet mattis vulputate.", 
         heading2: "Amet volutpat consequat",

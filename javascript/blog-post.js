@@ -26,7 +26,7 @@ const blogPostObject = [
     },
     {
         image: "images/birdie-rainbow-hearts-back.jpg",
-        date: "September 2021",
+        date: "September 12, 2021",
         title: "Pride Rainbow Dress",
         snippet: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Interdum varius sit amet mattis vulputate.", 
         heading2: "Amet volutpat consequat",
@@ -51,7 +51,7 @@ const blogPostObject = [
     {
         image: "images/pink-dinosaur-summer-dress-003-julie-napear-photography.jpg",
         date: "May 2, 2022",
-        title: "Science Twirl Dress",
+        title: "Dinosaur Dress",
         snippet: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Interdum varius sit amet mattis vulputate.", 
         heading2: "Amet volutpat consequat",
         content2: "Amet volutpat consequat mauris nunc congue nisi vitae suscipit. Blandit cursus risus at ultrices mi tempus. Id donec ultrices tincidunt arcu. Vel fringilla est ullamcorper eget nulla. Integer quis auctor elit sed vulputate mi sit. Suspendisse sed nisi lacus sed viverra tellus in hac. Vestibulum lorem sed risus ultricies tristique.",
@@ -63,7 +63,7 @@ const blogPostObject = [
     {
         image: "images/belle-dress-beauty-and-the-beast-002.jpg",
         date: "August 18, 2022",
-        title: "Science Twirl Dress",
+        title: "Beauty and her Books",
         snippet: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Interdum varius sit amet mattis vulputate.", 
         heading2: "Amet volutpat consequat",
         content2: "Amet volutpat consequat mauris nunc congue nisi vitae suscipit. Blandit cursus risus at ultrices mi tempus. Id donec ultrices tincidunt arcu. Vel fringilla est ullamcorper eget nulla. Integer quis auctor elit sed vulputate mi sit. Suspendisse sed nisi lacus sed viverra tellus in hac. Vestibulum lorem sed risus ultricies tristique.",
@@ -74,10 +74,55 @@ const blogPostObject = [
     },
 ]
 
-console.log("hello")
 const blogPostsContainer = document.getElementById("blog-posts-container");
 let blogFeed = "";
-console.log(blogPostsContainer);
+let currentPostFeed = ""
+const currentPostContainer = document.getElementById("current-post-container");
+
+function renderCurrentPost() {
+    currentPostContainer.innerHTML = currentPostFeed;
+}
+    
+function printCurrentPost (post) {
+    currentPostFeed = "";
+    currentPostFeed += `
+        <date class="current-post-date date">
+            ${blogPostObject[post].date}
+        </date>   
+        <h1 class="current-post-title">
+            ${blogPostObject[post].title}
+        </h1>
+        <p class="current-post-paragraph">
+            ${blogPostObject[post].snippet}
+        </p> 
+        <div class="current-post-image-and-text">    
+            <img class="current-post-img" src="${blogPostObject[post].image}">
+            <div class="current-post-text">
+                <h2 class="current-post-subtitle">
+                    ${blogPostObject[post].heading2}
+                </h2>
+                <p class="current-post-paragraph">
+                    ${blogPostObject[post].content2}
+                </p>          
+                <h2 class="current-post-subtitle">
+                    ${blogPostObject[post].heading3}
+                </h2>
+                <p class="current-post-paragraph">
+                    ${blogPostObject[post].content3}
+                </p>
+                <h2 class="current-post-subtitle">
+                ${blogPostObject[post].heading4}
+                </h2>
+                <p class="current-post-paragraph">
+                    ${blogPostObject[post].content4}
+                </p>
+            </div>
+        </div>
+    `;
+    renderCurrentPost();
+}
+
+
 
 function renderBlogPosts() {
     blogPostsContainer.innerHTML = blogFeed;
@@ -87,17 +132,34 @@ function printBlogFeed() {
 
     for (post of blogPostObject) {
     blogFeed += `
-        <div class="blog-post">
-            <img class="blog-post-image" src="${post.image}">
-            <date class="blog-post-date">${post.date}</date>
-            <h3 class="blog-title">${post.title}</h3>
-            <p class="blog-content">${post.snippet}
+        <div class="blog-post" id="blog-post"  data-choose="${post.title}">
+            <img class="blog-post-image" src="${post.image}"   data-choose="${post.title}">
+            <date class="blog-post-date" data-choose="${post.title}">
+                ${post.date}
+            </date>
+            <h3 class="blog-title" data-choose="${post.title}">
+                ${post.title}
+            </h3>
+            <p class="blog-content" data-choose="${post.title}">
+                ${post.snippet}
             </p>
         </div>
         `;
     }
-    console.log(blogFeed);
     renderBlogPosts();
 }
 
 printBlogFeed();
+printCurrentPost(blogPostObject.length - 1);
+
+document.addEventListener("click", function(e) {
+    if(e.target.dataset.choose) {
+        for (let i = 0; i < blogPostObject.length; i++) {
+            if (e.target.dataset.choose === blogPostObject[i].title) {
+                printCurrentPost(i);
+            }
+        }
+    }
+});
+
+
